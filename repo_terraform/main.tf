@@ -10,7 +10,7 @@ data "github_actions_public_key" "pubkey" {
 
 resource "github_actions_secret" "do_access_token" {
   repository       = github_repository.superset_hledger.name
-  secret_name      = "do_access_token"
+  secret_name      = "DO_ACCESS_TOKEN"
   encrypted_value  = var.digitalocean_access_token
 }
 

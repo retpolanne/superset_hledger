@@ -1,8 +1,8 @@
 terraform {
   required_providers {
-    github = {
-      source  = "integrations/github"
-      version = "~> 5.0"
+    digitalocean = {
+      source = "digitalocean/digitalocean"
+      version = "~> 2.0"
     }
   }
 }
